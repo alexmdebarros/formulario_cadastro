@@ -53,6 +53,9 @@
         #botaoCadastro:active{
             background-color: rgb(161, 73, 255);
         }
+        label{
+            color: white;
+        }
 
     </style>    
     <title>Cadastro EBAC</title>
@@ -61,15 +64,20 @@
     <form id="formCadastro">
         <h1>Cadastro de Usuários</h1>
         <br>
-        <input type="text" placeholder="Nome Completo">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="Nome Completo">
         <br>
-        <input type="email" placeholder="Digite seu Email">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Digite seu Email">
         <br>
-        <input type="email" placeholder="Confirme seu Email">
+        <label for="confirmaemail">Confirme seu Email:</label>
+        <input id="confirmaemail" type="email" placeholder="Confirme seu Email">
         <br>
-        <input type="password" placeholder="Crie sua senha">
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="Crie sua senha">
         <br>
-        <input type="password" placeholder="Confirme sua senha">
+        <label for="confirmasenha">Confirme sua Senha:</label>
+        <input id="confirmasenha" type="password" placeholder="Confirme sua senha">
         <br>
         <button id="botaoCadastro" type="submit">Cadastrar</button>
     </form>
